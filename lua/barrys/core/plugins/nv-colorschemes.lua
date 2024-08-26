@@ -18,7 +18,20 @@ return {
                 transparent = true,       -- Set transparent background.
                 fluo_color = "pink",      --  Fluo color: pink, yellow, orange, or green.
                 mode = "normal",          -- Intensity of the palette: normal, bright, desaturate, or dark. Notice that dark is ugly!
+                background_colour = "#000000",
                 aggressive_spell = false, -- Display colors for spell check.
+                styles = {
+                    comments = { "italic" },
+                    conditionals = { "bold" },
+                    booleans = { "bold" },
+                    types = { "bold" },
+                    keywords = { "bold" },
+                    functions = { "bold", "italic" },
+                    strings = { "italic", "bold" },
+                    decorators = { "italic", "bold" },
+                    properties = { "italic", "bold" },
+                    operators = { "italic", "bold" }
+                },
             })
         end,
     },

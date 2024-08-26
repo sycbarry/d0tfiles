@@ -8,4 +8,3 @@
 require("barrys.settings")
 require("barrys.lazy")
 require("barrys.core.init")
-

@@ -181,3 +181,36 @@ require('nvim-web-devicons').setup {
         },
     },
 }
+
+require('notify').setup {
+    background_colour = '#1e1e1e',
+}
+
+
+-- Ensure Treesitter is installed and configured
+require 'nvim-treesitter.configs'.setup {
+    highlight = {
+        enable = true,
+        additional_vim_regex_highlighting = false,
+    }
+}
+
+-- Define custom highlight groups
+vim.cmd [[highlight KeywordBold cterm=bold gui=bold]]
+vim.cmd [[highlight FunctionItalic cterm=italic gui=italic]]
+vim.cmd [[highlight TypeUnderline cterm=underline gui=underline]]
+vim.cmd [[highlight VariableUnderline cterm=underline gui=underline]]
+vim.cmd [[highlight CommentItalic cterm=italic gui=italic]]
+vim.cmd [[highlight StringBold cterm=bold gui=bold]]
+vim.cmd [[highlight ConstantBold cterm=bold gui=bold]]
+vim.cmd [[highlight IdentifierUnderline cterm=underline gui=underline]]
+
+-- Link Treesitter syntax groups to custom highlight groups
+vim.api.nvim_set_hl(0, 'TSKeyword', { link = 'KeywordBold' })
+vim.api.nvim_set_hl(0, 'TSFunction', { link = 'FunctionItalic' })
+vim.api.nvim_set_hl(0, 'TSType', { link = 'TypeUnderline' })
+vim.api.nvim_set_hl(0, 'TSVariable', { link = 'VariableUnderline' })
+vim.api.nvim_set_hl(0, 'TSComment', { link = 'CommentItalic' })
+vim.api.nvim_set_hl(0, 'TSString', { link = 'StringBold' })
+vim.api.nvim_set_hl(0, 'TSConstant', { link = 'ConstantBold' })
+vim.api.nvim_set_hl(0, 'TSIdentifier', { link = 'IdentifierUnderline' })
