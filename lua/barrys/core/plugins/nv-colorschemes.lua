@@ -57,25 +57,27 @@ return {
             -- vim.cmd.colorscheme "retrobox"
             -- vim.cmd.colorscheme "midnight-desert"
             -- vim.cmd.colorscheme "jellybeans-nvim"
-            -- vim.cmd.colorscheme "bluewery"
-
+            vim.cmd.colorscheme "bluewery"
             -- vim.cmd.colorscheme "melange"
             -- vim.cmd.colorscheme "sorbet"
             -- vim.cmd.colorscheme "evergarden"
             -- vim.cmd.colorscheme "embark"
-            --vim.cmd.colorscheme "bamboo"
+            -- vim.cmd.colorscheme "bamboo-vulgaris"
             -- vim.cmd.colorscheme "kat.nwim"
-            -- vim.cmd.colorscheme = "witch"
-            vim.cmd.colorscheme "flow"
+            -- vim.cmd.colorscheme = "witch-light"
+            -- vim.cmd.colorscheme "flow"
         end,
     },
     { 'katawful/kreative' },
     { 'katawful/kat.nvim',         as = "kat" },
     { 'sainnhe/sonokai' },
     { 'sainnhe/everforest' },
-    { 'relastle/bluewery.vim',     as = 'bluewery' },
-    { 'embark-theme/vim',          as = 'embark' },
-    { 'whatyouhide/vim-gotham',    as = 'gotham' },
+    {
+        'relastle/bluewery.vim',
+        as = 'bluewery',
+    },
+    { 'embark-theme/vim',       as = 'embark' },
+    { 'whatyouhide/vim-gotham', as = 'gotham' },
     {
         "ramojus/mellifluous.nvim",
         -- version = "v0.*", -- uncomment for stable config (some features might be missed if/when v1 comes out)
