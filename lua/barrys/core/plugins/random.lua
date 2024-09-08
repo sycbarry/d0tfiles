@@ -1,6 +1,13 @@
 return
 -- Auto Pairs
 {
+    {
+        "MeanderingProgrammer/render-markdown.nvim",
+        opts = {
+            file_types = { "markdown", "Avante" },
+        },
+        ft = { "markdown", "Avante" },
+    },
     { 'jiangmiao/auto-pairs' },
     {
         'gen740/SmoothCursor.nvim',

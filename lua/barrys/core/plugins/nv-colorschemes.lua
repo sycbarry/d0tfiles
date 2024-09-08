@@ -57,7 +57,7 @@ return {
             -- vim.cmd.colorscheme "retrobox"
             -- vim.cmd.colorscheme "midnight-desert"
             -- vim.cmd.colorscheme "jellybeans-nvim"
-            vim.cmd.colorscheme "bluewery"
+            -- vim.cmd.colorscheme "bluewery"
             -- vim.cmd.colorscheme "melange"
             -- vim.cmd.colorscheme "sorbet"
             -- vim.cmd.colorscheme "evergarden"
@@ -66,6 +66,7 @@ return {
             -- vim.cmd.colorscheme "kat.nwim"
             -- vim.cmd.colorscheme = "witch-light"
             -- vim.cmd.colorscheme "flow"
+            vim.cmd.colorscheme "mellifluous"
         end,
     },
     { 'katawful/kreative' },
@@ -87,8 +88,8 @@ return {
                 dim_inactive = false,
                 neutral = true,
                 bg_contrast = "hard",
-                color_set = "mellifluous",
-                -- color_set = "alduin",
+                -- color_set = "mellifluous",
+                color_set = "alduin",
                 -- color_set = "tender",
                 -- color_set = "mountain",
                 styles = { -- see :h attr-list for options. set {} for NONE, { option = true } for option
@@ -97,9 +98,9 @@ return {
                     folds = {},
                     loops = {},
                     functions = {},
-                    keywords = {},
+                    keywords = { bold = true },
                     strings = {},
-                    variables = {},
+                    variables = { bold = true },
                     numbers = {},
                     booleans = {},
                     properties = {},

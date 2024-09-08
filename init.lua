@@ -2,9 +2,8 @@
 
 --require('plugins')
 --require('configs')
---require('keybindings')
 --require'nvim-tree'.setup()
 
 require("barrys.settings")
-require("barrys.lazy")
 require("barrys.core.init")
+require("barrys.lazy")
