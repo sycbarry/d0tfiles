@@ -63,10 +63,10 @@ return {
             -- vim.cmd.colorscheme "evergarden"
             -- vim.cmd.colorscheme "embark"
             -- vim.cmd.colorscheme "bamboo-vulgaris"
-            -- vim.cmd.colorscheme "kat.nwim"
+            vim.cmd.colorscheme "kat.nwim"
             -- vim.cmd.colorscheme = "witch-light"
             -- vim.cmd.colorscheme "flow"
-            vim.cmd.colorscheme "mellifluous"
+            -- vim.cmd.colorscheme "mellifluous"
         end,
     },
     { 'katawful/kreative' },

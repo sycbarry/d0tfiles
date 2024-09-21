@@ -4,8 +4,8 @@ vim.opt.termguicolors = true
 
 local opt = vim.opt
 
-vim.opt.background = "dark"
 vim.opt.background = "light"
+vim.opt.background = "dark"
 
 
 -- vim.o.encoding = "UTF-8" -- Output encoding
@@ -71,8 +71,8 @@ opt.foldenable = false     -- Disable automatic fold on launch
 -- opt.clipboard = "unnamedplus" -- Allow yank to clipboard
 vim.wo.spell = false       -- Enable/Disable spell
 vim.bo.spelllang = "en_us" -- Set spell dictionary
--- vim.opt.mouse = "" -- Oh cmon... Get the hell off of my house
-opt.mouse = ""             -- Oh cmon... Get the hell off of my house
+vim.opt.mouse = "a"        -- Oh cmon... Get the hell off of my house
+opt.mouse = "a"            -- Oh cmon... Get the hell off of my house
 
 -- Folds
 -- vim.o.foldcolumn = "1" -- '0' is not bad

@@ -2,6 +2,9 @@ return
 -- Auto Pairs
 {
     {
+        "petertriho/nvim-scrollbar"
+    },
+    {
         "MeanderingProgrammer/render-markdown.nvim",
         opts = {
             file_types = { "markdown", "Avante" },

@@ -47,8 +47,11 @@ return {
             },
             submit = {
                 normal = "<CR>",
-                insert = "<C-s>",
+                insert = "<CR>",
             },
+            ask = "<leader>al",     -- ask
+            edit = "<leader>ak",    -- edit
+            refresh = "<leader>ar", -- refresh
         },
         hints = { enabled = true },
         windows = {
