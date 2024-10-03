@@ -5,7 +5,7 @@ return {
         priority = 1000,
         lazy = false,
         config = function(_, opts)
-            -- require("witch").setup(opts)
+            require("witch").setup(opts)
         end,
     },
     {
@@ -63,10 +63,8 @@ return {
             -- vim.cmd.colorscheme "evergarden"
             -- vim.cmd.colorscheme "embark"
             -- vim.cmd.colorscheme "bamboo-vulgaris"
-            vim.cmd.colorscheme "kat.nwim"
-            -- vim.cmd.colorscheme = "witch-light"
-            -- vim.cmd.colorscheme "flow"
-            -- vim.cmd.colorscheme "mellifluous"
+            -- vim.cmd.colorscheme "kat.nwim"
+            vim.cmd.colorscheme = "witch-dark"
         end,
     },
     { 'katawful/kreative' },
@@ -77,74 +75,8 @@ return {
         'relastle/bluewery.vim',
         as = 'bluewery',
     },
-    { 'embark-theme/vim',       as = 'embark' },
-    { 'whatyouhide/vim-gotham', as = 'gotham' },
-    {
-        "ramojus/mellifluous.nvim",
-        -- version = "v0.*", -- uncomment for stable config (some features might be missed if/when v1 comes out)
-        config = function()
-            --require("mellifluous").setup() -- optional, see configuration section.
-            require("mellifluous").setup({
-                dim_inactive = false,
-                neutral = true,
-                bg_contrast = "hard",
-                -- color_set = "mellifluous",
-                color_set = "alduin",
-                -- color_set = "tender",
-                -- color_set = "mountain",
-                styles = { -- see :h attr-list for options. set {} for NONE, { option = true } for option
-                    comments = { italic = true },
-                    conditionals = {},
-                    folds = {},
-                    loops = {},
-                    functions = {},
-                    keywords = { bold = true },
-                    strings = {},
-                    variables = { bold = true },
-                    numbers = {},
-                    booleans = {},
-                    properties = {},
-                    types = {},
-                    operators = {},
-                    markup = {
-                        headings = { bold = true },
-                    },
-                },
-                transparent_background = {
-                    enabled = false,
-                    floating_windows = true,
-                    telescope = true,
-                    file_tree = true,
-                    cursor_line = true,
-                    status_line = false,
-                },
-                flat_background = {
-                    line_numbers = false,
-                    floating_windows = false,
-                    file_tree = false,
-                    cursor_line_number = false,
-                },
-                plugins = {
-                    cmp = true,
-                    gitsigns = true,
-                    indent_blankline = true,
-                    nvim_tree = {
-                        enabled = true,
-                        show_root = false,
-                    },
-                    neo_tree = {
-                        enabled = true,
-                    },
-                    telescope = {
-                        enabled = true,
-                        nvchad_like = true,
-                    },
-                    startify = true,
-                },
-            })
-            --vim.cmd("colorscheme mellifluous")
-        end,
-    },
+    { 'embark-theme/vim',               as = 'embark' },
+    { 'whatyouhide/vim-gotham',         as = 'gotham' },
     { 'rktjmp/lush.nvim',               requires = "rktjmp/lush.nvim" },
     { 'daneofmanythings/chalktone.nvim' },
     { 'metalelf0/jellybeans-nvim' },

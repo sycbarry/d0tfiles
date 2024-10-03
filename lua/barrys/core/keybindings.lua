@@ -66,3 +66,9 @@ map("n", "<leader>z", "<cmd>ZenMode<cr>")
 -- Terminal Emulator
 map("n", "<Leader>cl", "<cmd>ToggleTerm<CR>")
 --map("n", "<Leader>cl", "<cmd>:split term://bash<CR>")
+--
+map("n", "<Leader>je", ":MoltenEvaluateOperator<CR>", { silent = true, desc = "run operator selection" })
+map("n", "<Leader>ji", ":MoltenInit<CR>", { silent = true, desc = "Initialize the plugin" })
+map("n", "<Leader>jl", ":MoltenEvaluateLine<CR>", { silent = true, desc = "evaluate line" })
+map("n", "<Leader>jc", ":MoltenReevaluateCell<CR>", { silent = true, desc = "re-evaluate cell" })
+map("v", "<Leader>jv", ":<C-u>MoltenEvaluateVisual<CR>gv", { silent = true, desc = "evaluate visual selection" })
