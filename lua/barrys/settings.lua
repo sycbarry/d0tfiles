@@ -1,11 +1,8 @@
 vim.opt.termguicolors = true
 
-
-
 local opt = vim.opt
 
-vim.opt.background = "light"
-vim.opt.background = "dark"
+-- vim.opt.background = "dark"
 
 
 -- vim.o.encoding = "UTF-8" -- Output encoding
@@ -68,6 +65,8 @@ opt.inccommand = "nosplit" -- Highlight search and replace
 opt.laststatus = 3         -- Status bar always on bottom (shared)
 opt.foldmethod = "indent"  -- Set fold to indent
 opt.foldenable = false     -- Disable automatic fold on launch
+
+
 -- opt.clipboard = "unnamedplus" -- Allow yank to clipboard
 vim.wo.spell = false       -- Enable/Disable spell
 vim.bo.spelllang = "en_us" -- Set spell dictionary

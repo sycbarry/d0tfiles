@@ -135,5 +135,4 @@ return
             vim.g.molten_output_win_max_height = 12
         end,
     },
-
 }

@@ -2,7 +2,7 @@
 
 --require('plugins')
 --require('configs')
---require'nvim-tree'.setup()
+-- require 'nvim-tree'.setup {}
 
 require("barrys.settings")
 require("barrys.core.init")

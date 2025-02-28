@@ -188,12 +188,6 @@ require('notify').setup {
 
 
 -- Ensure Treesitter is installed and configured
-require 'nvim-treesitter.configs'.setup {
-    highlight = {
-        enable = true,
-        additional_vim_regex_highlighting = false,
-    }
-}
 
 -- Define custom highlight groups
 vim.cmd [[highlight KeywordBold cterm=bold gui=bold]]
@@ -205,6 +199,8 @@ vim.cmd [[highlight StringBold cterm=bold gui=bold]]
 vim.cmd [[highlight ConstantBold cterm=bold gui=bold]]
 vim.cmd [[highlight IdentifierUnderline cterm=underline gui=underline]]
 
+
+
 -- Link Treesitter syntax groups to custom highlight groups
 vim.api.nvim_set_hl(0, 'TSKeyword', { link = 'KeywordBold' })
 vim.api.nvim_set_hl(0, 'TSFunction', { link = 'FunctionItalic' })
@@ -214,6 +210,12 @@ vim.api.nvim_set_hl(0, 'TSComment', { link = 'CommentItalic' })
 vim.api.nvim_set_hl(0, 'TSString', { link = 'StringBold' })
 vim.api.nvim_set_hl(0, 'TSConstant', { link = 'ConstantBold' })
 vim.api.nvim_set_hl(0, 'TSIdentifier', { link = 'IdentifierUnderline' })
+
+-- vim.cmd("colorscheme chalktone")
+-- vim.cmd("colorscheme retrobox")
+-- vim.cmd("colorscheme doubletrouble")
+-- vim.cmd("colorscheme miasma")
+vim.cmd("colorscheme rei")
 
 
 require("scrollbar").setup({
@@ -361,3 +363,7 @@ require("scrollbar").setup({
         ale = false,      -- Requires ALE
     },
 })
+
+require('nvim-treesitter.configs').setup {
+    highlight = { enable = true },
+}
