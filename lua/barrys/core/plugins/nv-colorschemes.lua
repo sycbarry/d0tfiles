@@ -21,10 +21,10 @@ return {
                 comments = { italic = true },
                 keywords = {},
                 identifiers = {},
-                functions = { italic = true, bold = true },
-                variables = {},
-                booleans = {},
-                loops = { italic = true }
+                functions = { italic = false, bold = true },
+                variables = { bold = true },
+                booleans = { bold = true },
+                loops = { italic = false }
             },
             integrations = {
                 gitsigns = true,
