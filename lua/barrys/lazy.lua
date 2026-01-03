@@ -212,10 +212,10 @@ vim.api.nvim_set_hl(0, 'TSConstant', { link = 'ConstantBold' })
 vim.api.nvim_set_hl(0, 'TSIdentifier', { link = 'IdentifierUnderline' })
 
 -- vim.cmd("colorscheme chalktone")
--- vim.cmd("colorscheme retrobox")
+vim.cmd("colorscheme retrobox")
 -- vim.cmd("colorscheme doubletrouble")
 -- vim.cmd("colorscheme miasma")
-vim.cmd("colorscheme rei")
+-- vim.cmd("colorscheme rei")
 
 
 require("scrollbar").setup({
@@ -366,4 +366,15 @@ require("scrollbar").setup({
 
 require('nvim-treesitter.configs').setup {
     highlight = { enable = true },
+}
+
+
+require("cinnamon").setup {
+    -- Enable all provided keymaps
+    keymaps = {
+        basic = true,
+        extra = true,
+    },
+    -- Only scroll the window
+    options = { mode = "window" },
 }

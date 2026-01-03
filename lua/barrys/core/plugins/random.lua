@@ -3,6 +3,14 @@ return
 {
     {
         "petertriho/nvim-scrollbar"
+
+    },
+    {
+        "declancm/cinnamon.nvim",
+        version = "*", -- use latest release
+        opts = {
+            -- change default options here
+        },
     },
     {
         "MeanderingProgrammer/render-markdown.nvim",
