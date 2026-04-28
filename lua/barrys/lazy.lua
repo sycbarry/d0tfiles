@@ -20,6 +20,15 @@ require("lazy").setup({
 
 
 
+require("kanagawa").setup({
+    undercurl = true,
+    commentStyle = { italic = true },
+    keywordStyle = { italic = true, bold = true },
+    functionStyle = { italic = true, bold = true },
+    statementStyle = { italic = true, bold = true }
+})
+
+
 require("conform").setup({
     -- Map of filetype to formatters
     formatters_by_ft = {
@@ -212,10 +221,17 @@ vim.api.nvim_set_hl(0, 'TSConstant', { link = 'ConstantBold' })
 vim.api.nvim_set_hl(0, 'TSIdentifier', { link = 'IdentifierUnderline' })
 
 -- vim.cmd("colorscheme chalktone")
-vim.cmd("colorscheme retrobox")
+-- vim.cmd("colorscheme pomatia")
+-- vim.cmd("colorscheme oxocarbon")
 -- vim.cmd("colorscheme doubletrouble")
 -- vim.cmd("colorscheme miasma")
 -- vim.cmd("colorscheme rei")
+
+-- vim.cmd("colorscheme retrobox")
+-- vim.cmd("colorscheme shine")
+-- vim.cmd("colorscheme kanagawa-lotus")
+vim.cmd("colorscheme kanagawa-wave")
+
 
 
 require("scrollbar").setup({
@@ -368,13 +384,33 @@ require('nvim-treesitter.configs').setup {
     highlight = { enable = true },
 }
 
+require("pomatia").setup({
+    -- Transparency enable
+    transparent = false,
 
-require("cinnamon").setup {
-    -- Enable all provided keymaps
-    keymaps = {
-        basic = true,
-        extra = true,
-    },
-    -- Only scroll the window
-    options = { mode = "window" },
-}
+    -- Set terminal_color_0 through terminal_color_15 for :terminal buffers.
+    terminal_colors = true,
+
+    -- Italic comments enable.
+    italic_comments = true,
+
+    -- Bold keywords and types, matching the original evening.vim behaviour.
+    bold_keywords = true,
+
+    -- Slightly dim text in unfocused splits.
+    dim_inactive_wins = false,
+
+    -- Diagnostic underline style: "straight" or "curl"
+    underline_diagnostics = "straight",
+
+    -- enable caching of theme for fast load up
+    caching = true,
+
+    -- enable/disable the background of the
+    -- list chars (so not related to transparency)
+    listchar_bg = true,
+
+    -- Override any highlight group after everything else is applied.
+    overrides = {},
+
+})

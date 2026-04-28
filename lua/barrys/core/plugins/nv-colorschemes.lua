@@ -7,11 +7,29 @@ return {
             require('chalktone').setup()
         end
     },
+    {
+        "rebelot/kanagawa.nvim"
+    },
     { "muchzill4/doubletrouble" },
     {
         "xero/miasma.nvim",
         lazy = false,
         priority = 1000,
+    },
+    {
+        "aliqyan-21/pomatia.nvim",
+        priority = 1000,
+        config = function()
+            require("pomatia").setup({})
+            vim.cmd.colorscheme("pomatia")
+        end,
+    },
+    {
+        "nyoom-engineering/oxocarbon.nvim"
+        -- Add in any other configuration;
+        --   event = foo,
+        --   config = bar
+        --   end,
     },
     {
         "wheat-thin-wiens/rei.nvim",

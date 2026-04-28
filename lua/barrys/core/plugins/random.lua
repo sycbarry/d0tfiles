@@ -3,7 +3,6 @@ return
 {
     {
         "petertriho/nvim-scrollbar"
-
     },
     {
         "declancm/cinnamon.nvim",
@@ -20,12 +19,6 @@ return
         ft = { "markdown", "Avante" },
     },
     { 'jiangmiao/auto-pairs' },
-    {
-        'gen740/SmoothCursor.nvim',
-        config = function()
-            require('smoothcursor').setup()
-        end
-    },
     {
         "Mr-LLLLL/cool-chunk.nvim",
         event = { "CursorHold", "CursorHoldI" },
@@ -54,7 +47,7 @@ return
                             right_arrow = ">",
                         },
                         textobject = "ah",
-                        animate_duration = 200, -- if don't want to animation, set to 0.
+                        animate_duration = 0, -- if don't want to animation, set to 0.
                         fire_event = { "CursorHold", "CursorHoldI" },
                     },
                     context = {
@@ -128,19 +121,5 @@ return
         opts = {
             -- configuration goes here
         },
-    },
-
-    { "anuvyklack/middleclass" },
-    {
-        "anuvyklack/animation.nvim"
-    },
-    {
-        "benlubas/molten-nvim",
-        version = "^1.0.0", -- use version <2.0.0 to avoid breaking changes
-        build = ":UpdateRemotePlugins",
-        init = function()
-            -- this is an example, not a default. Please see the readme for more configuration options
-            vim.g.molten_output_win_max_height = 12
-        end,
     },
 }
